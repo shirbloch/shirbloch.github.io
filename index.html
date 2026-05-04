@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Shir Bloch | PhD Candidate in Economics, Georgetown University</title>
+  <meta name="description" content="Shir Bloch is a PhD candidate in economics at Georgetown University, working at the intersection of industrial organization and political economy.">
+
+  <!-- Open Graph (controls how the link previews on Twitter, LinkedIn, etc.) -->
+  <meta property="og:title" content="Shir Bloch">
+  <meta property="og:description" content="PhD Candidate in Economics, Georgetown University. Research in political economy, public economics, and industrial organization.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://shirbloch.github.io">
+  <meta property="og:image" content="https://shirbloch.github.io/photo.jpg">
+
+  <!-- Schema.org Person markup helps Google understand the page is about you -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shir Bloch",
+    "jobTitle": "PhD Candidate in Economics",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Georgetown University, Department of Economics"
+    },
+    "url": "https://shirbloch.github.io",
+    "email": "sb2173@georgetown.edu",
+    "knowsAbout": ["Political Economy", "Public Economics", "Industrial Organization"],
+    "sameAs": ["https://github.com/shirbloch"]
+  }
+  </script>
+
+  <style>
+    /* ----- London Sands palette -----
+       Cream      #EAE2DD   page background
+       Periwinkle #D0D9E2   sidebar
+       Lavender   #C0BFCF   hairlines & dividers
+       Slate      #8391A3   links & accents
+       Sky        #C9DFE5   subtle details
+       Typography ramp derived from slate:
+       #2C3340 (name), #3D4654 (headings), #4A5365 (body), #5A6678 (muted)
+    */
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #EAE2DD;
+      color: #4A5365;
+      line-height: 1.65;
+      font-size: 15px;
+      min-height: 100vh;
+      padding: 2.5rem 1rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      max-width: 940px;
+      margin: 0 auto;
+      background: #FFFFFF;
+      border: 1px solid #C0BFCF;
+      border-radius: 6px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 250px 1fr;
+    }
+
+    /* ----- Sidebar ----- */
+    .sidebar {
+      background: #D0D9E2;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+
+    .photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #C9DFE5;
+      border: 3px solid #FFFFFF;
+      margin: 0 auto 1.25rem;
+      display: block;
+    }
+
+    h1.name {
+      font-size: 1.375rem;
+      font-weight: 600;
+      color: #2C3340;
+      margin-bottom: 0.35rem;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    .role {
+      font-size: 0.8125rem;
+      color: #5A6678;
+      line-height: 1.55;
+      margin-bottom: 1rem;
+    }
+
+    .email {
+      font-size: 0.8125rem;
+      color: #8391A3;
+      text-decoration: none;
+      border-bottom: 1px solid #8391A3;
+      display: inline-block;
+    }
+
+    .email:hover {
+      color: #5A6678;
+      border-bottom-color: #5A6678;
+    }
+
+    .sb-section {
+      margin-top: 1.75rem;
+    }
+
+    .sb-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #5A6678;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.5rem;
+    }
+
+    .sb-list {
+      font-size: 0.8125rem;
+      color: #3D4654;
+      line-height: 1.85;
+    }
+
+    .sb-list a {
+      color: #8391A3;
+      text-decoration: none;
+      border-bottom: 1px solid #8391A3;
+    }
+
+    .sb-list a:hover {
+      color: #5A6678;
+      border-bottom-color: #5A6678;
+    }
+
+    /* ----- Main content ----- */
+    .content {
+      padding: 2.5rem 2.75rem;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .section:last-child {
+      margin-bottom: 0;
+    }
+
+    .section h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #3D4654;
+      padding-bottom: 0.45rem;
+      border-bottom: 1px solid #C0BFCF;
+      margin-bottom: 0.85rem;
+      letter-spacing: 0.005em;
+    }
+
+    .section p {
+      font-size: 0.9375rem;
+      color: #4A5365;
+      line-height: 1.75;
+    }
+
+    /* Papers */
+    .paper {
+      margin-bottom: 0.9rem;
+    }
+
+    .paper:last-child {
+      margin-bottom: 0;
+    }
+
+    .paper-title {
+      font-style: italic;
+      color: #3D4654;
+      font-size: 0.9375rem;
+      line-height: 1.5;
+    }
+
+    .paper-meta {
+      font-size: 0.8125rem;
+      color: #5A6678;
+      margin-top: 0.15rem;
+    }
+
+    /* Lists */
+    .lst {
+      font-size: 0.9375rem;
+      color: #4A5365;
+      line-height: 1.95;
+    }
+
+    .meta-muted {
+      color: #5A6678;
+    }
+
+    /* General links in main content */
+    .content a {
+      color: #8391A3;
+      text-decoration: none;
+      border-bottom: 1px solid #8391A3;
+    }
+
+    .content a:hover {
+      color: #5A6678;
+      border-bottom-color: #5A6678;
+    }
+
+    /* ----- Mobile ----- */
+    @media (max-width: 720px) {
+      body { padding: 1rem 0.5rem; font-size: 14px; }
+      .page { grid-template-columns: 1fr; }
+      .sidebar { padding: 2rem 1.25rem; }
+      .content { padding: 2rem 1.5rem; }
+      .photo { width: 96px; height: 96px; }
+      h1.name { font-size: 1.25rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <aside class="sidebar">
+      <img src="photo.jpg" alt="Shir Bloch" class="photo">
+      <h1 class="name">Shir Bloch</h1>
+      <div class="role">
+        PhD Candidate<br>
+        Department of Economics<br>
+        Georgetown University
+      </div>
+      <a href="mailto:sb2173@georgetown.edu" class="email">sb2173@georgetown.edu</a>
+
+      <div class="sb-section">
+        <div class="sb-label">Fields</div>
+        <div class="sb-list">
+          Political Economy<br>
+          Public Economics<br>
+          Industrial Organization
+        </div>
+      </div>
+
+      <div class="sb-section">
+        <div class="sb-label">Links</div>
+        <div class="sb-list">
+          <a href="cv.pdf">CV</a><br>
+          <a href="https://github.com/shirbloch">GitHub</a><br>
+          <!-- TODO: replace YOUR_ID with your Google Scholar ID, or delete this line if you don't have a Scholar profile yet -->
+          <a href="https://scholar.google.com/citations?user=YOUR_ID">Google Scholar</a>
+        </div>
+      </div>
+    </aside>
+
+    <main class="content">
+
+      <section class="section">
+        <h2>About</h2>
+        <p>PhD candidate in economics at Georgetown University, working at the intersection of industrial organization and political economy. Currently a research assistant at the Georgetown Center for Business &amp; Public Policy and a program assistant at the DC Political Economy Center.</p>
+      </section>
+
+      <section class="section">
+        <h2>Selected works in progress</h2>
+
+        <div class="paper">
+          <div class="paper-title">The Market for Representation: Campaign Finance, Party Entry, and Representation Quality</div>
+          <div class="paper-meta">Sole-authored</div>
+        </div>
+
+        <div class="paper">
+          <div class="paper-title">Heterogeneity in the Rise and Repercussions of Populist Rule</div>
+          <div class="paper-meta">Sole-authored</div>
+        </div>
+
+        <div class="paper">
+          <div class="paper-title">Tax Incentives for Electric Vehicle Charging Stations in Low-Income Communities</div>
+          <div class="paper-meta">with Arik Levinson</div>
+        </div>
+
+        <div class="paper">
+          <div class="paper-title">Innovation in the Post-Sputnik Era</div>
+          <div class="paper-meta">with Walter Melnik and Andrew Smyth</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Teaching</h2>
+        <div class="lst">
+          Sports Economics (ECON 4411), Ian Gale <span class="meta-muted">— Spring 2026</span><br>
+          Poverty and Inequality (ECON 1056), Caue Dobbin <span class="meta-muted">— Fall 2025</span><br>
+          Managing People (ECON 1055), Emily Nix <span class="meta-muted">— Spring 2025</span><br>
+          Immigration Economics (ECON 2503), Anna Maria Mayda <span class="meta-muted">— Fall 2024</span>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Service</h2>
+        <div class="lst">
+          Planning Committee Chair, <a href="https://sites.google.com/georgetown.edu/pedevgradconf">DMV PhD Conference in Political Economy &amp; Development</a><br>
+          Co-President, Jewish Graduate Student Association<br>
+          Board Member, Economics Graduate Student Organization
+        </div>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
